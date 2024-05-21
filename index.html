@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/public/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "custom-gradient":
+                "linear-gradient(to top right, #E1D4ED, #E2E4F2)",
+            },
+            boxShadow: {
+              "outline-custom":
+                "0 0 0 1px #020014, 1px 1px 0 0 rgba(0, 0, 0, 0.15), 1px 1px 0 0 #020014, 4px 4px 0 0 #020014",
+            },
+
+            colors: {
+              black: "#020014",
+              white: "#FFFFFF",
+              gray: "#65636B",
+              blue: "#762BEB",
+            },
+            fontFamily: {
+              lalezar: ["Lalezar", "cursive"],
+              "plus-jakarta-sans": ['"Plus Jakarta Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Xinli</title>
+  </head>
+  <body class="font-plus-jakarta-sans">
+    <!-- start section navbar -->
+    <section class="section-navbar bg-custom-gradient">
+      <header class="max-w-screen-xl mx-auto py-[30px]">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex gap-10 gap-2">
+            <img src="/public/logo.svg" alt="" />
+            <h1 class="font-lalezar font-bold text-[2.50rem] uppercase mt-2">
+              Xinli
+            </h1>
+          </a>
+
+          <nav class="flex gap-10 items-center text-base font-medium">
+            <a href="">Features</a>
+            <a href="">Pricing</a>
+            <a href="">Docs</a>
+            <a href="">Showcase</a>
+          </nav>
+
+          <div class="flex gap-x-5 items-center">
+            <button class="capitalize font-medium">Sign in</button>
+            <button
+              class="py-4 px-[1.875rem] text-white capitalize font-extrabold bg-blue rounded-xl shadow-outline-custom"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!-- end section navbar -->
+
+    <!-- start section hero -->
+    <section class="section-hero max-w-screen-xl mx-auto py-[30px]">
+      
+    </section>
+    <!-- start section hero -->
+  </body>
+</html>
