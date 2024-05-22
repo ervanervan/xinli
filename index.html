@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -39,7 +40,7 @@
                 borderLeftWidth: "1px",
                 borderRightWidth: "4px",
                 borderBottomWidth: "4px",
-                borderColor: "black",
+                borderColor: "#020014",
               },
             };
             addUtilities(newUtilities, ["responsive", "hover"]);
@@ -62,6 +63,7 @@
     </script>
     <title>Xinli</title>
   </head>
+
   <body class="font-plus-jakarta-sans">
     <!-- start section navbar hero -->
     <div class="section-navbar-hero bg-custom-gradient">
@@ -140,20 +142,20 @@
     </div>
     <!-- end section navbar hero -->
 
-    <!-- start section All Integrations -->
-    <section class="mx-auto py-[42px]">
+    <!-- start section all brands -->
+    <section class="mx-auto my-[42px]">
       <div class="py-[70px] flex flex-col gap-y-[30px]">
         <h1 class="text-black font-extrabold text-[46px] text-center">
           All Integrations Available
         </h1>
 
-        <!-- all integrations 1 -->
+        <!-- all brands 1 -->
         <div class="overflow-x-auto hide-scrollbar">
           <div class="flex gap-x-10 items-center justify-center w-max mx-auto">
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/figma.svg" alt="Figma" />
+              <img src="./assets/brands/figma.svg" alt="Figma" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Figma</span>
                 <span class="text-gray text-lg font-medium"
@@ -164,7 +166,7 @@
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/whimsical.svg" alt="Whimsical" />
+              <img src="./assets/brands/whimsical.svg" alt="Whimsical" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Whimsical</span>
                 <span class="text-gray text-lg font-medium"
@@ -175,7 +177,7 @@
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/trello.svg" alt="Trello" />
+              <img src="./assets/brands/trello.svg" alt="Trello" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Trello</span>
                 <span class="text-gray text-lg font-medium"
@@ -186,7 +188,7 @@
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/invision.svg" alt="InVision" />
+              <img src="./assets/brands/invision.svg" alt="InVision" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">InVision</span>
                 <span class="text-gray text-lg font-medium"
@@ -197,7 +199,7 @@
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/jira.svg" alt="Jira" />
+              <img src="./assets/brands/jira.svg" alt="Jira" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Jira</span>
                 <span class="text-gray text-lg font-medium"
@@ -208,13 +210,13 @@
           </div>
         </div>
 
-        <!-- all integrations 2 -->
+        <!-- all brands 2 -->
         <div class="overflow-x-auto hide-scrollbar">
           <div class="flex gap-x-10 items-center justify-center w-max mx-auto">
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/miro.svg" alt="Miro" />
+              <img src="./assets/brands/miro.svg" alt="Miro" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Miro</span>
                 <span class="text-gray text-lg font-medium"
@@ -225,7 +227,7 @@
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/webflow.svg" alt="Webflow" />
+              <img src="./assets/brands/webflow.svg" alt="Webflow" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Webflow</span>
                 <span class="text-gray text-lg font-medium"
@@ -236,7 +238,7 @@
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/elementor.svg" alt="Elementor" />
+              <img src="./assets/brands/elementor.svg" alt="Elementor" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Elementor</span>
                 <span class="text-gray text-lg font-medium"
@@ -247,7 +249,7 @@
             <div
               class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
             >
-              <img src="./assets/firebase.svg" alt="Firebase" />
+              <img src="./assets/brands/firebase.svg" alt="Firebase" />
               <div class="flex flex-col">
                 <span class="font-extrabold text-xl">Firebase</span>
                 <span class="text-gray text-lg font-medium"
@@ -259,6 +261,54 @@
         </div>
       </div>
     </section>
-    <!-- end section All Integrations -->
+    <!-- end section all brands -->
+
+    <!-- start section AI-Powered System -->
+    <section class="max-w-screen-xl mx-auto">
+      <section class="section-ai-powered max-w-screen-xl mx-auto py-[70px]">
+        <div class="flex flex-row gap-x-28 items-center justify-center">
+          <!-- Image column -->
+          <div class="w-1/2">
+            <div
+              class="w-full h-[530px] rounded-[50px] bg-white border-outline-custom"
+            ></div>
+          </div>
+
+          <!-- Text column -->
+          <div class="w-1/2 flex flex-col gap-y-[50px]">
+            <div class="flex flex-col gap-y-[30px]">
+              <h1 class="text-6xl font-extrabold text-black leading-[4.5rem]">
+                AI-Powered System
+              </h1>
+              <p class="text-lg text-gray">
+                Make a better decision based on what your customer needs without
+                compromising your business value propositions.
+              </p>
+              <div class="flex gap-x-4 items-center">
+                <div class="flex items-center">
+                  <img src="./assets/founder1.svg" alt="" />
+                  <img src="./assets/founder2.svg" alt="" class="-ml-2.5" />
+                  <img src="./assets/founder3.svg" alt="" class="-ml-2.5" />
+                </div>
+                <p class="font-semibold text-gray">Join 28K global founders</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-6">
+              <button
+                class="py-5 px-10 text-white capitalize font-extrabold bg-blue rounded-xl border-outline-custom"
+              >
+                Try Free Trial
+              </button>
+              <button
+                class="py-5 px-10 text-black capitalize font-extrabold bg-white rounded-xl border-outline-custom"
+              >
+                Call Sales
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- end section AI-Powered System -->
   </body>
 </html>
