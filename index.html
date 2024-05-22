@@ -44,6 +44,19 @@
             };
             addUtilities(newUtilities, ["responsive", "hover"]);
           },
+
+          function ({ addUtilities }) {
+            const newUtilities = {
+              ".hide-scrollbar": {
+                "-ms-overflow-style": "none",
+                "scrollbar-width": "none",
+              },
+              ".hide-scrollbar::-webkit-scrollbar": {
+                display: "none",
+              },
+            };
+            addUtilities(newUtilities, ["responsive"]);
+          },
         ],
       };
     </script>
@@ -128,45 +141,124 @@
     <!-- end section navbar hero -->
 
     <!-- start section All Integrations -->
-    <section class="mx-auto py-[42px] overflow-x-hidden">
+    <section class="mx-auto py-[42px]">
       <div class="py-[70px] flex flex-col gap-y-[30px]">
         <h1 class="text-black font-extrabold text-[46px] text-center">
           All Integrations Available
         </h1>
-        <div class="flex gap-x-10 items-center">
-          <div
-            class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
-          >
-            <img src="./assets/figma.svg" alt="" />
-            <div class="flex flex-col">
-              <span class="font-extrabold text-xl">Figma</span>
-              <span class="text-gray text-lg font-medium">Design Software</span>
+
+        <!-- all integrations 1 -->
+        <div class="overflow-x-auto hide-scrollbar">
+          <div class="flex gap-x-10 items-center justify-center w-max mx-auto">
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/figma.svg" alt="Figma" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Figma</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
             </div>
-          </div>
-          <div
-            class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
-          >
-            <img src="./assets/stack.svg" alt="" />
-            <div class="flex flex-col">
-              <span class="font-extrabold text-xl">Figma</span>
-              <span class="text-gray text-lg font-medium">Design Software</span>
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/whimsical.svg" alt="Whimsical" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Whimsical</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/trello.svg" alt="Trello" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Trello</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/invision.svg" alt="InVision" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">InVision</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/jira.svg" alt="Jira" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Jira</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
             </div>
           </div>
         </div>
 
-        <div>
-          <div
-            class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
-          >
-            <img src="./assets/figma.svg" alt="" />
-            <div class="flex flex-col">
-              <span class="font-extrabold text-xl">Figma</span>
-              <span class="text-gray text-lg font-medium">Design Software</span>
+        <!-- all integrations 2 -->
+        <div class="overflow-x-auto hide-scrollbar">
+          <div class="flex gap-x-10 items-center justify-center w-max mx-auto">
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/miro.svg" alt="Miro" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Miro</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/webflow.svg" alt="Webflow" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Webflow</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/elementor.svg" alt="Elementor" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Elementor</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-x-[14px] border-outline-custom w-fit py-5 px-[22.5px] rounded-2xl"
+            >
+              <img src="./assets/firebase.svg" alt="Firebase" />
+              <div class="flex flex-col">
+                <span class="font-extrabold text-xl">Firebase</span>
+                <span class="text-gray text-lg font-medium"
+                  >Design Software</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- start section All Integrations -->
+    <!-- end section All Integrations -->
   </body>
 </html>
